@@ -6,7 +6,11 @@ volumes:
   rs11:
   rs12:
   rs13:
-
+  cassandra_data:
+    driver: local
+  cassandra2_data:
+    driver: local
+ 
 services:
   jupyterlab:
     image: jupyter/pyspark-notebook
